@@ -1,0 +1,53 @@
+{
+  "mcpServers": {
+    "sg-haze-nea": {
+      "command": "python3",
+      "args": [
+        "./mcp-servers/mcp-sg-haze-nea/server.py"
+      ],
+      "env": {
+        "DATA_GOV_SG_API_KEY": "${DATA_GOV_SG_API_KEY:-optional_for_higher_rate_limit}",
+        "TZ": "Asia/Singapore"
+      }
+    },
+    "sg-onemap-gis": {
+      "command": "python3",
+      "args": [
+        "./mcp-servers/mcp-sg-onemap-gis/server.py"
+      ],
+      "env": {
+        "ONEMAP_EMAIL": "${ONEMAP_EMAIL:-}",
+        "ONEMAP_PASSWORD": "${ONEMAP_PASSWORD:-}"
+      }
+    },
+    "satellite-earth-engine": {
+      "command": "python3",
+      "args": [
+        "./mcp-servers/mcp-satellite-earth-engine/server.py"
+      ],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "${GOOGLE_APPLICATION_CREDENTIALS:-}",
+        "NASA_FIRMS_MAP_KEY": "${NASA_FIRMS_MAP_KEY:-}"
+      }
+    },
+    "playwright-computer-use": {
+      "command": "python3",
+      "args": [
+        "./mcp-servers/mcp-playwright-computer-use/server.py"
+      ],
+      "env": {
+        "PLAYWRIGHT_BROWSERS_PATH": "0"
+      }
+    },
+    "github-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN:-}"
+      }
+    }
+  }
+}

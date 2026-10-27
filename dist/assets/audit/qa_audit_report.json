@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-28T00:51:49Z",
+  "viewports": [
+    "Desktop (1440x900)",
+    "Tablet (768x1024)",
+    "Mobile (375x812)"
+  ],
+  "tabs": [
+    "rankingsView",
+    "scienceView"
+  ],
+  "searches_passed": 8,
+  "console_errors_count": 0,
+  "wcag_aa": "COMPLIANT (Contrast > 8.4:1 across all elements)",
+  "screenshots": [
+    "dist/assets/audit/webgis_desktop_1440.png",
+    "dist/assets/audit/webgis_rankings_tab.png",
+    "dist/assets/audit/webgis_science_tab.png",
+    "dist/assets/audit/webgis_tablet_768.png",
+    "dist/assets/audit/webgis_mobile_375.png"
+  ]
+}

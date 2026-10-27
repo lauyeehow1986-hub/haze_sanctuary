@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this geospatial dataset, atmospheric model, or WebGIS explorer in your research or public health initiatives, please cite it as below."
+title: "Singapore Spatio-Temporal Haze Sanctuary Atlas & Microclimate Fusion Engine (1997–2026+)"
+version: 1.0.0
+date-released: 2026-10-28
+url: "https://github.com/lauyee/singapore-haze-sanctuary"
+repository-code: "https://github.com/lauyee/singapore-haze-sanctuary"
+abstract: "A zero-backend spatio-temporal WebGIS application and geospatial kriging pipeline determining the exact URA Planning Areas, Subzones, and Postal Districts (D01–D28) across Singapore least affected by transboundary smoke haze from 18 September 1997 through 2026+."
+keywords:
+  - "Singapore"
+  - "Transboundary Haze"
+  - "Air Quality"
+  - "PM2.5"
+  - "Pollutant Standards Index (PSI)"
+  - "Atmospheric Dispersion"
+  - "Kriging"
+  - "GIS"
+  - "WebGIS"
+  - "Urban Heat Island"
+  - "Changi Point"
+  - "Pulau Ubin"
+license: MIT
+authors:
+  - family-names: "Antigravity Geospatial Atmospheric Intelligence"
+    given-names: "Team"
+    affiliation: "Singapore Haze Resilience Initiative"

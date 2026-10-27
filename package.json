@@ -1,0 +1,26 @@
+{
+  "name": "singapore-haze-sanctuary-antigravity-kit",
+  "version": "1.0.0",
+  "description": "Spatio-temporal GIS, Satellite, and NEA PSI/PM2.5 Haze Sanctuary Finder for Singapore (1997-2026+) with Antigravity Skills & MCP Servers",
+  "scripts": {
+    "setup": "bash setup.sh",
+    "start-mcp-nea": "python3 mcp-servers/mcp-sg-haze-nea/server.py",
+    "start-mcp-onemap": "python3 mcp-servers/mcp-sg-onemap-gis/server.py",
+    "serve-web-app": "npx http-server ./dist -p 8080 -o",
+    "test-e2e": "npx playwright test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1",
+    "@modelcontextprotocol/server-github": "^0.6.2",
+    "@playwright/mcp": "^0.0.15",
+    "@turf/turf": "^7.1.0",
+    "deck.gl": "^9.0.34",
+    "leaflet": "^1.9.4",
+    "maplibre-gl": "^4.7.1",
+    "chart.js": "^4.4.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "http-server": "^14.1.1"
+  }
+}
