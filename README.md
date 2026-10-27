@@ -1,7 +1,7 @@
 # Singapore Haze Sanctuary Finder (1997–2026+) 🇸🇬
 ### Spatio-Temporal Multi-Layer GIS, Satellite & Atmospheric Kriging Engine
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20WebGIS-emerald?style=for-the-badge&logo=github)](https://lauyee.github.io/singapore-haze-sanctuary/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20WebGIS-emerald?style=for-the-badge&logo=github)](https://lauyeehow1986-hub.github.io/haze_sanctuary/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)](requirements.txt)
 [![Antigravity Kit](https://img.shields.io/badge/Antigravity-Skills%20%26%20MCP-amber?style=for-the-badge)](mcp_config.json)
@@ -165,7 +165,7 @@ If you use this dataset or WebGIS application in your academic, environmental, o
   title = {Singapore Spatio-Temporal Haze Sanctuary Atlas & Microclimate Fusion Engine (1997–2026+)},
   year = {2026},
   publisher = {GitHub},
-  howpublished = {\url{https://github.com/lauyee/singapore-haze-sanctuary}}
+  howpublished = {\url{https://github.com/lauyeehow1986-hub/haze_sanctuary}}
 }
 ```
 

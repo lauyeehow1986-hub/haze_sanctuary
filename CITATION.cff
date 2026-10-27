@@ -3,8 +3,8 @@ message: "If you use this geospatial dataset, atmospheric model, or WebGIS explo
 title: "Singapore Spatio-Temporal Haze Sanctuary Atlas & Microclimate Fusion Engine (1997–2026+)"
 version: 1.0.0
 date-released: 2026-10-28
-url: "https://github.com/lauyee/singapore-haze-sanctuary"
-repository-code: "https://github.com/lauyee/singapore-haze-sanctuary"
+url: "https://github.com/lauyeehow1986-hub/haze_sanctuary"
+repository-code: "https://github.com/lauyeehow1986-hub/haze_sanctuary"
 abstract: "A zero-backend spatio-temporal WebGIS application and geospatial kriging pipeline determining the exact URA Planning Areas, Subzones, and Postal Districts (D01–D28) across Singapore least affected by transboundary smoke haze from 18 September 1997 through 2026+."
 keywords:
   - "Singapore"
