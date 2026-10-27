@@ -664,13 +664,13 @@ def build_processed_dataset():
         kalimantan_metrics = compute_hsi_score(s, episode_id="2015", wind_deg=150)
         ne_breeze_metrics = compute_hsi_score(s, episode_id="2026", wind_deg=60)
 
-        # Baseline overall HSI
-        baseline = compute_hsi_score(s, episode_id="2026")
+        # Baseline overall composite HSI across all episodes
+        composite_hsi = round(float(np.mean([m["hsi_score"] for m in episodes_metrics.values()])), 1)
         mean_psi = round(float(np.mean(all_psi_vals)), 1)
 
         # Cumulative unhealthy hours estimate (scaled from 18 Sep 1997)
         # Pulau Ubin: ~312 hrs; Changi Point: ~348 hrs; Tuas/Jurong: ~1,420 hrs
-        unhealthy_hours = int(round(1420 * (1.0 - (baseline["hsi_score"] / 100.0) * 0.78)))
+        unhealthy_hours = int(round(1420 * (1.0 - (composite_hsi / 100.0) * 0.78)))
 
         # Percentage delta versus national maximum
         psi_delta = round(((mean_psi - 225.0) / 225.0) * 100.0, 1)
@@ -678,8 +678,8 @@ def build_processed_dataset():
 
         enriched_subzones.append({
             **s,
-            "hsi": baseline["hsi_score"],
-            "effective_psi_baseline": baseline["effective_psi"],
+            "hsi": composite_hsi,
+            "effective_psi_baseline": round(float(np.mean(all_psi_vals)), 1),
             "mean_psi_all_episodes": mean_psi,
             "psi_delta_vs_max": psi_delta_str,
             "unhealthy_hours_since_1997": unhealthy_hours,
@@ -689,7 +689,7 @@ def build_processed_dataset():
             "episodes": episodes_metrics
         })
 
-    # Sort and rank by HSI descending
+    # Sort and rank by composite_hsi descending
     enriched_subzones.sort(key=lambda x: x["hsi"], reverse=True)
     for rank_idx, item in enumerate(enriched_subzones, start=1):
         item["sanctuary_rank"] = rank_idx
@@ -724,6 +724,7 @@ def build_processed_dataset():
                 "postal_sectors": item["sectors"],
                 "sample_postal_codes": item["postal_codes"],
                 "haze_sanctuary_index": item["hsi"],
+                "effective_psi_baseline": item["effective_psi_baseline"],
                 "psi_delta_vs_max": item["psi_delta_vs_max"],
                 "unhealthy_hours_since_1997": item["unhealthy_hours_since_1997"],
                 "mean_psi_all_episodes": item["mean_psi_all_episodes"],
@@ -872,10 +873,16 @@ def generate_infographic_atlas(subzones):
         else:
             # Fallback based on region
             reg = POSTAL_DISTRICTS_LOOKUP[d]["region"]
-            if "East" in reg: avg_hsi, sumatra_psi, kalimantan_psi = 88.0, 160.0, 240.0
-            elif "North" in reg: avg_hsi, sumatra_psi, kalimantan_psi = 82.0, 185.0, 260.0
-            elif "Central" in reg: avg_hsi, sumatra_psi, kalimantan_psi = 62.0, 225.0, 310.0
-            else: avg_hsi, sumatra_psi, kalimantan_psi = 50.0, 246.0, 290.0
+            if reg == "North-East":
+                avg_hsi, sumatra_psi, kalimantan_psi = 76.5, 175.0, 252.0
+            elif reg == "East":
+                avg_hsi, sumatra_psi, kalimantan_psi = 76.0, 160.0, 240.0
+            elif "North" in reg:
+                avg_hsi, sumatra_psi, kalimantan_psi = 82.0, 185.0, 260.0
+            elif "Central" in reg:
+                avg_hsi, sumatra_psi, kalimantan_psi = 62.0, 225.0, 310.0
+            else:
+                avg_hsi, sumatra_psi, kalimantan_psi = 50.0, 246.0, 290.0
         district_scores.append({"district": d, "hsi": avg_hsi, "sw_psi": sumatra_psi, "se_psi": kalimantan_psi, "name": POSTAL_DISTRICTS_LOOKUP[d]["areas"]})
 
     district_scores.sort(key=lambda x: x["hsi"], reverse=True)
@@ -915,6 +922,26 @@ def generate_infographic_atlas(subzones):
     plt.savefig(chart3_path, dpi=300, facecolor=fig.get_facecolor())
     plt.close()
     print(f"Generated {chart3_path}")
+
+    # Copy all 4 PNG charts to assets/
+    import shutil
+    os.makedirs("assets", exist_ok=True)
+    charts = [
+        "sg_haze_sanctuary_ranking_atlas.png",
+        "sg_haze_diurnal_microclimate_atlas.png",
+        "sg_postal_district_hsi_heatmap.png",
+        "sg_haze_synoptic_wind_plumes.png"
+    ]
+    for c in charts:
+        src = os.path.join("dist", "assets", c)
+        dst = os.path.join("assets", c)
+        if os.path.exists(src):
+            try:
+                shutil.copy2(src, dst)
+            except OSError:
+                with open(src, "rb") as f_in, open(dst, "wb") as f_out:
+                    f_out.write(f_in.read())
+            print(f"Copied {src} -> {dst}")
 
 if __name__ == "__main__":
     subzones = build_processed_dataset()

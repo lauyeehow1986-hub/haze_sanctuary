@@ -801,7 +801,7 @@ Determine with mathematical, meteorological, and geospatial precision which exac
         planningArea: "Sungei Kadut / Lim Chu Kang",
         region: "North",
         district: "D24 / D25",
-        sectors: "71, 72, 73",
+        sectors: "71, 72, 73, 69, 70, 74",
         postalCodes: ["718925", "739458", "719198"],
         hsi: 81.5,
         psiDelta: "-11.8%",
@@ -827,7 +827,7 @@ Determine with mathematical, meteorological, and geospatial precision which exac
         planningArea: "Tampines / Bedok",
         region: "East",
         district: "D16 / D18",
-        sectors: "46, 47, 52",
+        sectors: "46, 47, 48, 52",
         postalCodes: ["529653", "469662", "528523"],
         hsi: 77.8,
         psiDelta: "-8.2%",
@@ -853,7 +853,7 @@ Determine with mathematical, meteorological, and geospatial precision which exac
         planningArea: "Serangoon / Hougang",
         region: "North-East",
         district: "D19 / D28",
-        sectors: "53, 54, 55, 79, 80",
+        sectors: "53, 54, 55, 79, 80, 31, 32, 33, 34, 35, 36, 37, 56, 57",
         postalCodes: ["534013", "556083", "797650"],
         hsi: 75.4,
         psiDelta: "-6.1%",
@@ -879,7 +879,7 @@ Determine with mathematical, meteorological, and geospatial precision which exac
         planningArea: "Marine Parade",
         region: "East",
         district: "D15",
-        sectors: "42, 43, 44, 45",
+        sectors: "38, 39, 40, 41, 42, 43, 44, 45",
         postalCodes: ["449876", "439053", "428802"],
         hsi: 68.2,
         psiDelta: "+1.4%",
@@ -904,8 +904,8 @@ Determine with mathematical, meteorological, and geospatial precision which exac
         subzone: "Downtown Core, Marina & Orchard",
         planningArea: "Downtown Core / Orchard / Newton",
         region: "Central",
-        district: "D01 / D02 / D09",
-        sectors: "01–08, 22, 23",
+        district: "D01 / D02 / D06 / D07 / D08 / D09 / D10 / D11",
+        sectors: "01, 02, 03, 04, 05, 06, 07, 08, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30",
         postalCodes: ["018989", "018956", "238801", "079903"],
         hsi: 61.5,
         psiDelta: "+8.9%",
@@ -931,7 +931,7 @@ Determine with mathematical, meteorological, and geospatial precision which exac
         planningArea: "Bukit Merah / Southern Islands",
         region: "South",
         district: "D03 / D04",
-        sectors: "09, 10, 14–16",
+        sectors: "09, 10, 14, 15, 16",
         postalCodes: ["098585", "099981", "159088"],
         hsi: 58.4,
         psiDelta: "+12.3%",
@@ -956,8 +956,8 @@ Determine with mathematical, meteorological, and geospatial precision which exac
         subzone: "Jurong East, Clementi & Bukit Batok",
         planningArea: "Jurong East / Bukit Batok / Clementi",
         region: "West",
-        district: "D05 / D21 / D23",
-        sectors: "12, 58, 59, 60, 65–68",
+        district: "D05 / D21 / D22 / D23",
+        sectors: "11, 12, 13, 58, 59, 60, 65, 66, 67, 68",
         postalCodes: ["608532", "658713", "129588"],
         hsi: 55.8,
         psiDelta: "+15.1%",
@@ -1227,14 +1227,40 @@ Determine with mathematical, meteorological, and geospatial precision which exac
       const feedbackText = document.getElementById("searchFeedbackText");
       if (!q) return;
 
-      const sectorPrefix = /^\d{2,6}$/.test(q) ? q.slice(0, 2) : null;
-      let match = SUBZONES_DATA.find(item =>
-        item.subzone.toLowerCase().includes(q) ||
-        item.planningArea.toLowerCase().includes(q) ||
-        item.district.toLowerCase().includes(q) ||
-        item.postalCodes.some(code => code.includes(q)) ||
-        (sectorPrefix && item.sectors.split(",").map(s => s.trim()).includes(sectorPrefix))
-      );
+      let match = null;
+      if (/^\d{2}$/.test(q)) {
+        match = SUBZONES_DATA.find(item =>
+          item.sectors.split(",").map(s => s.trim()).includes(q)
+        );
+      } else if (/^\d{6}$/.test(q)) {
+        // Priority 1: exact postal code match across all subzones
+        match = SUBZONES_DATA.find(item => item.postalCodes.includes(q));
+        // Priority 2: 2-digit sector prefix match
+        if (!match) {
+          const prefix = q.slice(0, 2);
+          match = SUBZONES_DATA.find(item =>
+            item.sectors.split(",").map(s => s.trim()).includes(prefix)
+          );
+        }
+      } else {
+        // Match normalized postal district queries (e.g. "d1", "d01", "district 1", "district 01", "d17")
+        const distMatch = q.match(/^(?:d|district\s*)(\d{1,2})$/i);
+        if (distMatch) {
+          const targetDist = "D" + distMatch[1].padStart(2, "0");
+          match = SUBZONES_DATA.find(item => {
+            const districts = item.district.split("/").map(d => d.trim().toUpperCase());
+            return districts.includes(targetDist);
+          });
+        }
+        if (!match) {
+          match = SUBZONES_DATA.find(item =>
+            item.subzone.toLowerCase().includes(q) ||
+            item.planningArea.toLowerCase().includes(q) ||
+            item.district.toLowerCase().includes(q) ||
+            (item.refugeSpot && item.refugeSpot.toLowerCase().includes(q))
+          );
+        }
+      }
 
       if (!match) {
         match = SUBZONES_DATA[1]; // Default to Changi Point sanctuary recommendation

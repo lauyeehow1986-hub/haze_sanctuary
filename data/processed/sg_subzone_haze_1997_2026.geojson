@@ -5,7 +5,7 @@
     "temporal_coverage": "1997-09-18 to 2026-10-28",
     "first_unhealthy_psi_day": "1997-09-18",
     "crs": "EPSG:4326 (WGS84)",
-    "generated_at": "2026-10-28T00:47:56.021706",
+    "generated_at": "2026-10-28T06:59:10.992985",
     "methodology": "Anisotropic Universal Kriging + MSS Wind Regimes + Sea-Breeze Flushing + Urban SVF Penalties"
   },
   "features": [
@@ -61,9 +61,10 @@
           "508331",
           "508310"
         ],
-        "haze_sanctuary_index": 71.7,
+        "haze_sanctuary_index": 61.7,
+        "effective_psi_baseline": 131.1,
         "psi_delta_vs_max": "-41.7%",
-        "unhealthy_hours_since_1997": 626,
+        "unhealthy_hours_since_1997": 737,
         "mean_psi_all_episodes": 131.1,
         "sumatra_sw_regime_psi": 147.3,
         "kalimantan_se_regime_psi": 226.2,
@@ -174,9 +175,10 @@
           "499611",
           "498922"
         ],
-        "haze_sanctuary_index": 69.9,
+        "haze_sanctuary_index": 59.5,
+        "effective_psi_baseline": 136.5,
         "psi_delta_vs_max": "-39.3%",
-        "unhealthy_hours_since_1997": 646,
+        "unhealthy_hours_since_1997": 761,
         "mean_psi_all_episodes": 136.5,
         "sumatra_sw_regime_psi": 151.7,
         "kalimantan_se_regime_psi": 232.2,
@@ -287,9 +289,10 @@
           "519115",
           "519117"
         ],
-        "haze_sanctuary_index": 69.4,
+        "haze_sanctuary_index": 59.0,
+        "effective_psi_baseline": 137.6,
         "psi_delta_vs_max": "-38.8%",
-        "unhealthy_hours_since_1997": 651,
+        "unhealthy_hours_since_1997": 767,
         "mean_psi_all_episodes": 137.6,
         "sumatra_sw_regime_psi": 152.8,
         "kalimantan_se_regime_psi": 233.3,
@@ -400,9 +403,10 @@
           "508820",
           "508788"
         ],
-        "haze_sanctuary_index": 67.2,
+        "haze_sanctuary_index": 56.6,
+        "effective_psi_baseline": 143.3,
         "psi_delta_vs_max": "-36.3%",
-        "unhealthy_hours_since_1997": 676,
+        "unhealthy_hours_since_1997": 793,
         "mean_psi_all_episodes": 143.3,
         "sumatra_sw_regime_psi": 158.0,
         "kalimantan_se_regime_psi": 239.2,
@@ -463,458 +467,6 @@
     },
     {
       "type": "Feature",
-      "id": "elias",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              103.96,
-              1.376
-            ],
-            [
-              103.9525,
-              1.38899
-            ],
-            [
-              103.9375,
-              1.38899
-            ],
-            [
-              103.93,
-              1.376
-            ],
-            [
-              103.9375,
-              1.36301
-            ],
-            [
-              103.9525,
-              1.36301
-            ],
-            [
-              103.96,
-              1.376
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "sanctuary_rank": 5,
-        "subzone": "Elias",
-        "planning_area": "Pasir Ris",
-        "region": "East",
-        "postal_district": "D18",
-        "postal_sectors": [
-          "51"
-        ],
-        "sample_postal_codes": [
-          "510625",
-          "510626",
-          "518135"
-        ],
-        "haze_sanctuary_index": 65.1,
-        "psi_delta_vs_max": "-33.9%",
-        "unhealthy_hours_since_1997": 699,
-        "mean_psi_all_episodes": 148.7,
-        "sumatra_sw_regime_psi": 163.1,
-        "kalimantan_se_regime_psi": 244.8,
-        "ne_sea_breeze_psi": 134.4,
-        "refuge_spot": "Elias Mall, Pasir Ris Green Strip & Riverina Enclave (Postal Code 510625)",
-        "meteorological_mechanism": "Residential sanctuary core; fast sea-breeze penetration along Sungei Api Api river basin.",
-        "episodes": {
-          "1997": {
-            "effective_psi": 167.8,
-            "hsi_score": 46.3,
-            "sea_relief": 18.1,
-            "uhi_penalty": 3.0,
-            "canopy_relief": 7.4,
-            "advection_impact": 12.3
-          },
-          "2013": {
-            "effective_psi": 163.1,
-            "hsi_score": 48.3,
-            "sea_relief": 18.1,
-            "uhi_penalty": 3.0,
-            "canopy_relief": 7.4,
-            "advection_impact": 3.7
-          },
-          "2015": {
-            "effective_psi": 244.8,
-            "hsi_score": 14.0,
-            "sea_relief": 18.1,
-            "uhi_penalty": 3.0,
-            "canopy_relief": 7.4,
-            "advection_impact": 12.3
-          },
-          "2019": {
-            "effective_psi": 109.8,
-            "hsi_score": 70.7,
-            "sea_relief": 18.1,
-            "uhi_penalty": 3.0,
-            "canopy_relief": 7.4,
-            "advection_impact": 12.3
-          },
-          "2023": {
-            "effective_psi": 83.8,
-            "hsi_score": 81.6,
-            "sea_relief": 18.1,
-            "uhi_penalty": 3.0,
-            "canopy_relief": 7.4,
-            "advection_impact": 12.3
-          },
-          "2026": {
-            "effective_psi": 123.1,
-            "hsi_score": 65.1,
-            "sea_relief": 18.1,
-            "uhi_penalty": 3.0,
-            "canopy_relief": 7.4,
-            "advection_impact": 3.7
-          }
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "tampines_east",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              103.97,
-              1.355
-            ],
-            [
-              103.9625,
-              1.36799
-            ],
-            [
-              103.9475,
-              1.36799
-            ],
-            [
-              103.94,
-              1.355
-            ],
-            [
-              103.9475,
-              1.34201
-            ],
-            [
-              103.9625,
-              1.34201
-            ],
-            [
-              103.97,
-              1.355
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "sanctuary_rank": 6,
-        "subzone": "Tampines East",
-        "planning_area": "Tampines",
-        "region": "East",
-        "postal_district": "D18",
-        "postal_sectors": [
-          "52"
-        ],
-        "sample_postal_codes": [
-          "529605",
-          "529606",
-          "529607"
-        ],
-        "haze_sanctuary_index": 60.4,
-        "psi_delta_vs_max": "-28.0%",
-        "unhealthy_hours_since_1997": 751,
-        "mean_psi_all_episodes": 161.9,
-        "sumatra_sw_regime_psi": 174.2,
-        "kalimantan_se_regime_psi": 259.0,
-        "ne_sea_breeze_psi": 145.2,
-        "refuge_spot": "Tampines Eco Green Park & Tampines East CC (Postal Code 529605)",
-        "meteorological_mechanism": "Eastern suburban basin; moderate residential density; benefits from eastern maritime dilution.",
-        "episodes": {
-          "1997": {
-            "effective_psi": 182.0,
-            "hsi_score": 40.3,
-            "sea_relief": 11.8,
-            "uhi_penalty": 5.8,
-            "canopy_relief": 5.8,
-            "advection_impact": 15.8
-          },
-          "2013": {
-            "effective_psi": 174.2,
-            "hsi_score": 43.6,
-            "sea_relief": 11.8,
-            "uhi_penalty": 5.8,
-            "canopy_relief": 5.8,
-            "advection_impact": 4.0
-          },
-          "2015": {
-            "effective_psi": 259.0,
-            "hsi_score": 8.0,
-            "sea_relief": 11.8,
-            "uhi_penalty": 5.8,
-            "canopy_relief": 5.8,
-            "advection_impact": 15.8
-          },
-          "2019": {
-            "effective_psi": 124.0,
-            "hsi_score": 64.7,
-            "sea_relief": 11.8,
-            "uhi_penalty": 5.8,
-            "canopy_relief": 5.8,
-            "advection_impact": 15.8
-          },
-          "2023": {
-            "effective_psi": 98.0,
-            "hsi_score": 75.6,
-            "sea_relief": 11.8,
-            "uhi_penalty": 5.8,
-            "canopy_relief": 5.8,
-            "advection_impact": 15.8
-          },
-          "2026": {
-            "effective_psi": 134.2,
-            "hsi_score": 60.4,
-            "sea_relief": 11.8,
-            "uhi_penalty": 5.8,
-            "canopy_relief": 5.8,
-            "advection_impact": 4.0
-          }
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sembawang_straits",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              103.851,
-              1.462
-            ],
-            [
-              103.8435,
-              1.47499
-            ],
-            [
-              103.8285,
-              1.47499
-            ],
-            [
-              103.821,
-              1.462
-            ],
-            [
-              103.8285,
-              1.44901
-            ],
-            [
-              103.8435,
-              1.44901
-            ],
-            [
-              103.851,
-              1.462
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "sanctuary_rank": 7,
-        "subzone": "Sembawang Straits",
-        "planning_area": "Sembawang",
-        "region": "North",
-        "postal_district": "D27",
-        "postal_sectors": [
-          "75"
-        ],
-        "sample_postal_codes": [
-          "759819",
-          "759820",
-          "757753"
-        ],
-        "haze_sanctuary_index": 57.4,
-        "psi_delta_vs_max": "-31.3%",
-        "unhealthy_hours_since_1997": 784,
-        "mean_psi_all_episodes": 154.5,
-        "sumatra_sw_regime_psi": 186.4,
-        "kalimantan_se_regime_psi": 256.1,
-        "ne_sea_breeze_psi": 148.3,
-        "refuge_spot": "Sembawang Park Coastal Pavilion, Kampong Wak Hassan & Beaulieu House (Postal Code 759819)",
-        "meteorological_mechanism": "Northern shoreline on Johor Strait; low building density; consistent sea-breeze reversal from Northeast.",
-        "episodes": {
-          "1997": {
-            "effective_psi": 161.1,
-            "hsi_score": 49.2,
-            "sea_relief": 24.1,
-            "uhi_penalty": 1.3,
-            "canopy_relief": 9.0,
-            "advection_impact": 7.8
-          },
-          "2013": {
-            "effective_psi": 186.4,
-            "hsi_score": 38.5,
-            "sea_relief": 24.1,
-            "uhi_penalty": 1.3,
-            "canopy_relief": 9.0,
-            "advection_impact": 8.1
-          },
-          "2015": {
-            "effective_psi": 256.1,
-            "hsi_score": 9.3,
-            "sea_relief": 24.1,
-            "uhi_penalty": 1.3,
-            "canopy_relief": 9.0,
-            "advection_impact": 7.8
-          },
-          "2019": {
-            "effective_psi": 108.1,
-            "hsi_score": 71.4,
-            "sea_relief": 24.1,
-            "uhi_penalty": 1.3,
-            "canopy_relief": 9.0,
-            "advection_impact": 7.8
-          },
-          "2023": {
-            "effective_psi": 74.1,
-            "hsi_score": 85.7,
-            "sea_relief": 24.1,
-            "uhi_penalty": 1.3,
-            "canopy_relief": 9.0,
-            "advection_impact": 7.8
-          },
-          "2026": {
-            "effective_psi": 141.4,
-            "hsi_score": 57.4,
-            "sea_relief": 24.1,
-            "uhi_penalty": 1.3,
-            "canopy_relief": 9.0,
-            "advection_impact": 8.1
-          }
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "bedok_north",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              103.945,
-              1.332
-            ],
-            [
-              103.9375,
-              1.34499
-            ],
-            [
-              103.9225,
-              1.34499
-            ],
-            [
-              103.915,
-              1.332
-            ],
-            [
-              103.9225,
-              1.31901
-            ],
-            [
-              103.9375,
-              1.31901
-            ],
-            [
-              103.945,
-              1.332
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "sanctuary_rank": 8,
-        "subzone": "Bedok North",
-        "planning_area": "Bedok",
-        "region": "East",
-        "postal_district": "D16",
-        "postal_sectors": [
-          "46"
-        ],
-        "sample_postal_codes": [
-          "460124",
-          "460218",
-          "460538"
-        ],
-        "haze_sanctuary_index": 56.2,
-        "psi_delta_vs_max": "-21.1%",
-        "unhealthy_hours_since_1997": 798,
-        "mean_psi_all_episodes": 177.5,
-        "sumatra_sw_regime_psi": 184.3,
-        "kalimantan_se_regime_psi": 277.3,
-        "ne_sea_breeze_psi": 153.2,
-        "refuge_spot": "Bedok Reservoir Park & Heartbeat@Bedok (Postal Code 460218)",
-        "meteorological_mechanism": "Inland East node; intermediate shelter from Sumatra SW; vulnerable to southern Kalimantan plumes.",
-        "episodes": {
-          "1997": {
-            "effective_psi": 200.3,
-            "hsi_score": 32.7,
-            "sea_relief": 5.7,
-            "uhi_penalty": 6.9,
-            "canopy_relief": 5.0,
-            "advection_impact": 26.1
-          },
-          "2013": {
-            "effective_psi": 184.3,
-            "hsi_score": 39.4,
-            "sea_relief": 5.7,
-            "uhi_penalty": 6.9,
-            "canopy_relief": 5.0,
-            "advection_impact": 6.1
-          },
-          "2015": {
-            "effective_psi": 277.3,
-            "hsi_score": 0.3,
-            "sea_relief": 5.7,
-            "uhi_penalty": 6.9,
-            "canopy_relief": 5.0,
-            "advection_impact": 26.1
-          },
-          "2019": {
-            "effective_psi": 142.3,
-            "hsi_score": 57.0,
-            "sea_relief": 5.7,
-            "uhi_penalty": 6.9,
-            "canopy_relief": 5.0,
-            "advection_impact": 26.1
-          },
-          "2023": {
-            "effective_psi": 116.3,
-            "hsi_score": 67.9,
-            "sea_relief": 5.7,
-            "uhi_penalty": 6.9,
-            "canopy_relief": 5.0,
-            "advection_impact": 26.1
-          },
-          "2026": {
-            "effective_psi": 144.3,
-            "hsi_score": 56.2,
-            "sea_relief": 5.7,
-            "uhi_penalty": 6.9,
-            "canopy_relief": 5.0,
-            "advection_impact": 6.1
-          }
-        }
-      }
-    },
-    {
-      "type": "Feature",
       "id": "coney_island",
       "geometry": {
         "type": "Polygon",
@@ -952,7 +504,7 @@
         ]
       },
       "properties": {
-        "sanctuary_rank": 9,
+        "sanctuary_rank": 5,
         "subzone": "Coney Island",
         "planning_area": "Punggol",
         "region": "North-East",
@@ -964,9 +516,10 @@
           "829325",
           "828694"
         ],
-        "haze_sanctuary_index": 56.1,
+        "haze_sanctuary_index": 54.6,
+        "effective_psi_baseline": 148.0,
         "psi_delta_vs_max": "-34.2%",
-        "unhealthy_hours_since_1997": 799,
+        "unhealthy_hours_since_1997": 815,
         "mean_psi_all_episodes": 148.0,
         "sumatra_sw_regime_psi": 144.6,
         "kalimantan_se_regime_psi": 149.7,
@@ -1027,112 +580,114 @@
     },
     {
       "type": "Feature",
-      "id": "sungei_buloh",
+      "id": "elias",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              103.746,
-              1.446
+              103.96,
+              1.376
             ],
             [
-              103.7385,
-              1.45899
+              103.9525,
+              1.38899
             ],
             [
-              103.7235,
-              1.45899
+              103.9375,
+              1.38899
             ],
             [
-              103.716,
-              1.446
+              103.93,
+              1.376
             ],
             [
-              103.7235,
-              1.43301
+              103.9375,
+              1.36301
             ],
             [
-              103.7385,
-              1.43301
+              103.9525,
+              1.36301
             ],
             [
-              103.746,
-              1.446
+              103.96,
+              1.376
             ]
           ]
         ]
       },
       "properties": {
-        "sanctuary_rank": 10,
-        "subzone": "Sungei Buloh",
-        "planning_area": "Lim Chu Kang",
-        "region": "North",
-        "postal_district": "D24",
+        "sanctuary_rank": 6,
+        "subzone": "Elias",
+        "planning_area": "Pasir Ris",
+        "region": "East",
+        "postal_district": "D18",
         "postal_sectors": [
-          "71"
+          "51"
         ],
         "sample_postal_codes": [
-          "718925",
-          "718926"
+          "510625",
+          "510626",
+          "518135"
         ],
-        "haze_sanctuary_index": 54.2,
-        "psi_delta_vs_max": "-30.3%",
-        "unhealthy_hours_since_1997": 820,
-        "mean_psi_all_episodes": 156.9,
-        "sumatra_sw_regime_psi": 194.0,
-        "kalimantan_se_regime_psi": 255.9,
-        "ne_sea_breeze_psi": 147.4,
-        "refuge_spot": "Sungei Buloh Wetland Reserve Visitor Centre & Coastal Trail (Postal Code 718925)",
-        "meteorological_mechanism": "Northwest coastal wetland; extensive mangrove canopy; sheltered during southern Kalimantan plumes.",
+        "haze_sanctuary_index": 54.3,
+        "effective_psi_baseline": 148.7,
+        "psi_delta_vs_max": "-33.9%",
+        "unhealthy_hours_since_1997": 819,
+        "mean_psi_all_episodes": 148.7,
+        "sumatra_sw_regime_psi": 163.1,
+        "kalimantan_se_regime_psi": 244.8,
+        "ne_sea_breeze_psi": 134.4,
+        "refuge_spot": "Elias Mall, Pasir Ris Green Strip & Riverina Enclave (Postal Code 510625)",
+        "meteorological_mechanism": "Residential sanctuary core; fast sea-breeze penetration along Sungei Api Api river basin.",
         "episodes": {
           "1997": {
-            "effective_psi": 160.9,
-            "hsi_score": 49.2,
-            "sea_relief": 22.7,
-            "uhi_penalty": 0.8,
-            "canopy_relief": 10.7,
-            "advection_impact": 8.5
+            "effective_psi": 167.8,
+            "hsi_score": 46.3,
+            "sea_relief": 18.1,
+            "uhi_penalty": 3.0,
+            "canopy_relief": 7.4,
+            "advection_impact": 12.3
           },
           "2013": {
-            "effective_psi": 194.0,
-            "hsi_score": 35.3,
-            "sea_relief": 22.7,
-            "uhi_penalty": 0.8,
-            "canopy_relief": 10.7,
-            "advection_impact": 16.6
+            "effective_psi": 163.1,
+            "hsi_score": 48.3,
+            "sea_relief": 18.1,
+            "uhi_penalty": 3.0,
+            "canopy_relief": 7.4,
+            "advection_impact": 3.7
           },
           "2015": {
-            "effective_psi": 255.9,
-            "hsi_score": 9.3,
-            "sea_relief": 22.7,
-            "uhi_penalty": 0.8,
-            "canopy_relief": 10.7,
-            "advection_impact": 8.5
+            "effective_psi": 244.8,
+            "hsi_score": 14.0,
+            "sea_relief": 18.1,
+            "uhi_penalty": 3.0,
+            "canopy_relief": 7.4,
+            "advection_impact": 12.3
           },
           "2019": {
-            "effective_psi": 107.9,
-            "hsi_score": 71.5,
-            "sea_relief": 22.7,
-            "uhi_penalty": 0.8,
-            "canopy_relief": 10.7,
-            "advection_impact": 8.5
+            "effective_psi": 109.8,
+            "hsi_score": 70.7,
+            "sea_relief": 18.1,
+            "uhi_penalty": 3.0,
+            "canopy_relief": 7.4,
+            "advection_impact": 12.3
           },
           "2023": {
-            "effective_psi": 73.9,
-            "hsi_score": 85.8,
-            "sea_relief": 22.7,
-            "uhi_penalty": 0.8,
-            "canopy_relief": 10.7,
-            "advection_impact": 8.5
+            "effective_psi": 83.8,
+            "hsi_score": 81.6,
+            "sea_relief": 18.1,
+            "uhi_penalty": 3.0,
+            "canopy_relief": 7.4,
+            "advection_impact": 12.3
           },
           "2026": {
-            "effective_psi": 149.0,
-            "hsi_score": 54.2,
-            "sea_relief": 22.7,
-            "uhi_penalty": 0.8,
-            "canopy_relief": 10.7,
-            "advection_impact": 16.6
+            "effective_psi": 123.1,
+            "hsi_score": 65.1,
+            "sea_relief": 18.1,
+            "uhi_penalty": 3.0,
+            "canopy_relief": 7.4,
+            "advection_impact": 3.7
           }
         }
       }
@@ -1176,7 +731,7 @@
         ]
       },
       "properties": {
-        "sanctuary_rank": 11,
+        "sanctuary_rank": 7,
         "subzone": "Punggol Point",
         "planning_area": "Punggol",
         "region": "North-East",
@@ -1189,9 +744,10 @@
           "828695",
           "828833"
         ],
-        "haze_sanctuary_index": 53.8,
+        "haze_sanctuary_index": 52.4,
+        "effective_psi_baseline": 153.4,
         "psi_delta_vs_max": "-31.8%",
-        "unhealthy_hours_since_1997": 824,
+        "unhealthy_hours_since_1997": 840,
         "mean_psi_all_episodes": 153.4,
         "sumatra_sw_regime_psi": 150.0,
         "kalimantan_se_regime_psi": 155.1,
@@ -1252,113 +808,341 @@
     },
     {
       "type": "Feature",
-      "id": "marine_parade",
+      "id": "sembawang_straits",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              103.92,
-              1.302
+              103.851,
+              1.462
             ],
             [
-              103.9125,
-              1.31499
+              103.8435,
+              1.47499
             ],
             [
-              103.8975,
-              1.31499
+              103.8285,
+              1.47499
             ],
             [
-              103.89,
-              1.302
+              103.821,
+              1.462
             ],
             [
-              103.8975,
-              1.28901
+              103.8285,
+              1.44901
             ],
             [
-              103.9125,
-              1.28901
+              103.8435,
+              1.44901
             ],
             [
-              103.92,
-              1.302
+              103.851,
+              1.462
             ]
           ]
         ]
       },
       "properties": {
-        "sanctuary_rank": 12,
-        "subzone": "Marine Parade",
-        "planning_area": "Marine Parade",
-        "region": "East",
-        "postal_district": "D15",
+        "sanctuary_rank": 8,
+        "subzone": "Sembawang Straits",
+        "planning_area": "Sembawang",
+        "region": "North",
+        "postal_district": "D27",
         "postal_sectors": [
-          "44"
+          "75"
         ],
         "sample_postal_codes": [
-          "449876",
-          "449877",
-          "449269"
+          "759819",
+          "759820",
+          "757753"
         ],
-        "haze_sanctuary_index": 52.2,
-        "psi_delta_vs_max": "-15.1%",
-        "unhealthy_hours_since_1997": 842,
-        "mean_psi_all_episodes": 191.0,
-        "sumatra_sw_regime_psi": 193.8,
-        "kalimantan_se_regime_psi": 292.8,
-        "ne_sea_breeze_psi": 158.0,
-        "refuge_spot": "Parkway Parade Commercial Tower & Marine Parade CC (Postal Code 449269)",
-        "meteorological_mechanism": "Direct southern coastal exposure; first landfall for Kalimantan & South Sumatra plumes; avoid outdoor coast during SE winds.",
+        "haze_sanctuary_index": 51.9,
+        "effective_psi_baseline": 154.5,
+        "psi_delta_vs_max": "-31.3%",
+        "unhealthy_hours_since_1997": 845,
+        "mean_psi_all_episodes": 154.5,
+        "sumatra_sw_regime_psi": 186.4,
+        "kalimantan_se_regime_psi": 256.1,
+        "ne_sea_breeze_psi": 148.3,
+        "refuge_spot": "Sembawang Park Coastal Pavilion, Kampong Wak Hassan & Beaulieu House (Postal Code 759819)",
+        "meteorological_mechanism": "Northern shoreline on Johor Strait; low building density; consistent sea-breeze reversal from Northeast.",
         "episodes": {
           "1997": {
-            "effective_psi": 215.8,
-            "hsi_score": 26.2,
-            "sea_relief": 1.4,
-            "uhi_penalty": 7.4,
-            "canopy_relief": 5.0,
-            "advection_impact": 36.8
+            "effective_psi": 161.1,
+            "hsi_score": 49.2,
+            "sea_relief": 24.1,
+            "uhi_penalty": 1.3,
+            "canopy_relief": 9.0,
+            "advection_impact": 7.8
           },
           "2013": {
-            "effective_psi": 193.8,
-            "hsi_score": 35.4,
-            "sea_relief": 1.4,
-            "uhi_penalty": 7.4,
-            "canopy_relief": 5.0,
-            "advection_impact": 10.8
+            "effective_psi": 186.4,
+            "hsi_score": 38.5,
+            "sea_relief": 24.1,
+            "uhi_penalty": 1.3,
+            "canopy_relief": 9.0,
+            "advection_impact": 8.1
           },
           "2015": {
-            "effective_psi": 292.8,
-            "hsi_score": 0.0,
-            "sea_relief": 1.4,
-            "uhi_penalty": 7.4,
-            "canopy_relief": 5.0,
-            "advection_impact": 36.8
+            "effective_psi": 256.1,
+            "hsi_score": 9.3,
+            "sea_relief": 24.1,
+            "uhi_penalty": 1.3,
+            "canopy_relief": 9.0,
+            "advection_impact": 7.8
           },
           "2019": {
-            "effective_psi": 157.8,
-            "hsi_score": 50.5,
-            "sea_relief": 1.4,
-            "uhi_penalty": 7.4,
-            "canopy_relief": 5.0,
-            "advection_impact": 36.8
+            "effective_psi": 108.1,
+            "hsi_score": 71.4,
+            "sea_relief": 24.1,
+            "uhi_penalty": 1.3,
+            "canopy_relief": 9.0,
+            "advection_impact": 7.8
           },
           "2023": {
-            "effective_psi": 131.8,
-            "hsi_score": 61.5,
-            "sea_relief": 1.4,
-            "uhi_penalty": 7.4,
-            "canopy_relief": 5.0,
-            "advection_impact": 36.8
+            "effective_psi": 74.1,
+            "hsi_score": 85.7,
+            "sea_relief": 24.1,
+            "uhi_penalty": 1.3,
+            "canopy_relief": 9.0,
+            "advection_impact": 7.8
           },
           "2026": {
-            "effective_psi": 153.8,
-            "hsi_score": 52.2,
-            "sea_relief": 1.4,
-            "uhi_penalty": 7.4,
-            "canopy_relief": 5.0,
-            "advection_impact": 10.8
+            "effective_psi": 141.4,
+            "hsi_score": 57.4,
+            "sea_relief": 24.1,
+            "uhi_penalty": 1.3,
+            "canopy_relief": 9.0,
+            "advection_impact": 8.1
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sungei_buloh",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.746,
+              1.446
+            ],
+            [
+              103.7385,
+              1.45899
+            ],
+            [
+              103.7235,
+              1.45899
+            ],
+            [
+              103.716,
+              1.446
+            ],
+            [
+              103.7235,
+              1.43301
+            ],
+            [
+              103.7385,
+              1.43301
+            ],
+            [
+              103.746,
+              1.446
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sanctuary_rank": 9,
+        "subzone": "Sungei Buloh",
+        "planning_area": "Lim Chu Kang",
+        "region": "North",
+        "postal_district": "D24",
+        "postal_sectors": [
+          "71"
+        ],
+        "sample_postal_codes": [
+          "718925",
+          "718926"
+        ],
+        "haze_sanctuary_index": 50.9,
+        "effective_psi_baseline": 156.9,
+        "psi_delta_vs_max": "-30.3%",
+        "unhealthy_hours_since_1997": 856,
+        "mean_psi_all_episodes": 156.9,
+        "sumatra_sw_regime_psi": 194.0,
+        "kalimantan_se_regime_psi": 255.9,
+        "ne_sea_breeze_psi": 147.4,
+        "refuge_spot": "Sungei Buloh Wetland Reserve Visitor Centre & Coastal Trail (Postal Code 718925)",
+        "meteorological_mechanism": "Northwest coastal wetland; extensive mangrove canopy; sheltered during southern Kalimantan plumes.",
+        "episodes": {
+          "1997": {
+            "effective_psi": 160.9,
+            "hsi_score": 49.2,
+            "sea_relief": 22.7,
+            "uhi_penalty": 0.8,
+            "canopy_relief": 10.7,
+            "advection_impact": 8.5
+          },
+          "2013": {
+            "effective_psi": 194.0,
+            "hsi_score": 35.3,
+            "sea_relief": 22.7,
+            "uhi_penalty": 0.8,
+            "canopy_relief": 10.7,
+            "advection_impact": 16.6
+          },
+          "2015": {
+            "effective_psi": 255.9,
+            "hsi_score": 9.3,
+            "sea_relief": 22.7,
+            "uhi_penalty": 0.8,
+            "canopy_relief": 10.7,
+            "advection_impact": 8.5
+          },
+          "2019": {
+            "effective_psi": 107.9,
+            "hsi_score": 71.5,
+            "sea_relief": 22.7,
+            "uhi_penalty": 0.8,
+            "canopy_relief": 10.7,
+            "advection_impact": 8.5
+          },
+          "2023": {
+            "effective_psi": 73.9,
+            "hsi_score": 85.8,
+            "sea_relief": 22.7,
+            "uhi_penalty": 0.8,
+            "canopy_relief": 10.7,
+            "advection_impact": 8.5
+          },
+          "2026": {
+            "effective_psi": 149.0,
+            "hsi_score": 54.2,
+            "sea_relief": 22.7,
+            "uhi_penalty": 0.8,
+            "canopy_relief": 10.7,
+            "advection_impact": 16.6
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tampines_east",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.97,
+              1.355
+            ],
+            [
+              103.9625,
+              1.36799
+            ],
+            [
+              103.9475,
+              1.36799
+            ],
+            [
+              103.94,
+              1.355
+            ],
+            [
+              103.9475,
+              1.34201
+            ],
+            [
+              103.9625,
+              1.34201
+            ],
+            [
+              103.97,
+              1.355
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sanctuary_rank": 10,
+        "subzone": "Tampines East",
+        "planning_area": "Tampines",
+        "region": "East",
+        "postal_district": "D18",
+        "postal_sectors": [
+          "52"
+        ],
+        "sample_postal_codes": [
+          "529605",
+          "529606",
+          "529607"
+        ],
+        "haze_sanctuary_index": 48.8,
+        "effective_psi_baseline": 161.9,
+        "psi_delta_vs_max": "-28.0%",
+        "unhealthy_hours_since_1997": 879,
+        "mean_psi_all_episodes": 161.9,
+        "sumatra_sw_regime_psi": 174.2,
+        "kalimantan_se_regime_psi": 259.0,
+        "ne_sea_breeze_psi": 145.2,
+        "refuge_spot": "Tampines Eco Green Park & Tampines East CC (Postal Code 529605)",
+        "meteorological_mechanism": "Eastern suburban basin; moderate residential density; benefits from eastern maritime dilution.",
+        "episodes": {
+          "1997": {
+            "effective_psi": 182.0,
+            "hsi_score": 40.3,
+            "sea_relief": 11.8,
+            "uhi_penalty": 5.8,
+            "canopy_relief": 5.8,
+            "advection_impact": 15.8
+          },
+          "2013": {
+            "effective_psi": 174.2,
+            "hsi_score": 43.6,
+            "sea_relief": 11.8,
+            "uhi_penalty": 5.8,
+            "canopy_relief": 5.8,
+            "advection_impact": 4.0
+          },
+          "2015": {
+            "effective_psi": 259.0,
+            "hsi_score": 8.0,
+            "sea_relief": 11.8,
+            "uhi_penalty": 5.8,
+            "canopy_relief": 5.8,
+            "advection_impact": 15.8
+          },
+          "2019": {
+            "effective_psi": 124.0,
+            "hsi_score": 64.7,
+            "sea_relief": 11.8,
+            "uhi_penalty": 5.8,
+            "canopy_relief": 5.8,
+            "advection_impact": 15.8
+          },
+          "2023": {
+            "effective_psi": 98.0,
+            "hsi_score": 75.6,
+            "sea_relief": 11.8,
+            "uhi_penalty": 5.8,
+            "canopy_relief": 5.8,
+            "advection_impact": 15.8
+          },
+          "2026": {
+            "effective_psi": 134.2,
+            "hsi_score": 60.4,
+            "sea_relief": 11.8,
+            "uhi_penalty": 5.8,
+            "canopy_relief": 5.8,
+            "advection_impact": 4.0
           }
         }
       }
@@ -1402,7 +1186,7 @@
         ]
       },
       "properties": {
-        "sanctuary_rank": 13,
+        "sanctuary_rank": 11,
         "subzone": "Springleaf",
         "planning_area": "Yishun",
         "region": "North",
@@ -1415,9 +1199,10 @@
           "787132",
           "787140"
         ],
-        "haze_sanctuary_index": 48.2,
+        "haze_sanctuary_index": 42.8,
+        "effective_psi_baseline": 176.2,
         "psi_delta_vs_max": "-21.7%",
-        "unhealthy_hours_since_1997": 886,
+        "unhealthy_hours_since_1997": 946,
         "mean_psi_all_episodes": 176.2,
         "sumatra_sw_regime_psi": 208.3,
         "kalimantan_se_regime_psi": 277.7,
@@ -1478,6 +1263,120 @@
     },
     {
       "type": "Feature",
+      "id": "bedok_north",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.945,
+              1.332
+            ],
+            [
+              103.9375,
+              1.34499
+            ],
+            [
+              103.9225,
+              1.34499
+            ],
+            [
+              103.915,
+              1.332
+            ],
+            [
+              103.9225,
+              1.31901
+            ],
+            [
+              103.9375,
+              1.31901
+            ],
+            [
+              103.945,
+              1.332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sanctuary_rank": 12,
+        "subzone": "Bedok North",
+        "planning_area": "Bedok",
+        "region": "East",
+        "postal_district": "D16",
+        "postal_sectors": [
+          "46"
+        ],
+        "sample_postal_codes": [
+          "460124",
+          "460218",
+          "460538"
+        ],
+        "haze_sanctuary_index": 42.2,
+        "effective_psi_baseline": 177.5,
+        "psi_delta_vs_max": "-21.1%",
+        "unhealthy_hours_since_1997": 953,
+        "mean_psi_all_episodes": 177.5,
+        "sumatra_sw_regime_psi": 184.3,
+        "kalimantan_se_regime_psi": 277.3,
+        "ne_sea_breeze_psi": 153.2,
+        "refuge_spot": "Bedok Reservoir Park & Heartbeat@Bedok (Postal Code 460218)",
+        "meteorological_mechanism": "Inland East node; intermediate shelter from Sumatra SW; vulnerable to southern Kalimantan plumes.",
+        "episodes": {
+          "1997": {
+            "effective_psi": 200.3,
+            "hsi_score": 32.7,
+            "sea_relief": 5.7,
+            "uhi_penalty": 6.9,
+            "canopy_relief": 5.0,
+            "advection_impact": 26.1
+          },
+          "2013": {
+            "effective_psi": 184.3,
+            "hsi_score": 39.4,
+            "sea_relief": 5.7,
+            "uhi_penalty": 6.9,
+            "canopy_relief": 5.0,
+            "advection_impact": 6.1
+          },
+          "2015": {
+            "effective_psi": 277.3,
+            "hsi_score": 0.3,
+            "sea_relief": 5.7,
+            "uhi_penalty": 6.9,
+            "canopy_relief": 5.0,
+            "advection_impact": 26.1
+          },
+          "2019": {
+            "effective_psi": 142.3,
+            "hsi_score": 57.0,
+            "sea_relief": 5.7,
+            "uhi_penalty": 6.9,
+            "canopy_relief": 5.0,
+            "advection_impact": 26.1
+          },
+          "2023": {
+            "effective_psi": 116.3,
+            "hsi_score": 67.9,
+            "sea_relief": 5.7,
+            "uhi_penalty": 6.9,
+            "canopy_relief": 5.0,
+            "advection_impact": 26.1
+          },
+          "2026": {
+            "effective_psi": 144.3,
+            "hsi_score": 56.2,
+            "sea_relief": 5.7,
+            "uhi_penalty": 6.9,
+            "canopy_relief": 5.0,
+            "advection_impact": 6.1
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
       "id": "central_water_catchment",
       "geometry": {
         "type": "Polygon",
@@ -1515,7 +1414,7 @@
         ]
       },
       "properties": {
-        "sanctuary_rank": 14,
+        "sanctuary_rank": 13,
         "subzone": "Central Catchment",
         "planning_area": "Central Catchment",
         "region": "North",
@@ -1528,9 +1427,10 @@
           "779914",
           "787130"
         ],
-        "haze_sanctuary_index": 47.7,
+        "haze_sanctuary_index": 42.0,
+        "effective_psi_baseline": 178.5,
         "psi_delta_vs_max": "-20.7%",
-        "unhealthy_hours_since_1997": 892,
+        "unhealthy_hours_since_1997": 955,
         "mean_psi_all_episodes": 178.5,
         "sumatra_sw_regime_psi": 209.6,
         "kalimantan_se_regime_psi": 280.5,
@@ -1591,6 +1491,120 @@
     },
     {
       "type": "Feature",
+      "id": "marine_parade",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.92,
+              1.302
+            ],
+            [
+              103.9125,
+              1.31499
+            ],
+            [
+              103.8975,
+              1.31499
+            ],
+            [
+              103.89,
+              1.302
+            ],
+            [
+              103.8975,
+              1.28901
+            ],
+            [
+              103.9125,
+              1.28901
+            ],
+            [
+              103.92,
+              1.302
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sanctuary_rank": 14,
+        "subzone": "Marine Parade",
+        "planning_area": "Marine Parade",
+        "region": "East",
+        "postal_district": "D15",
+        "postal_sectors": [
+          "44"
+        ],
+        "sample_postal_codes": [
+          "449876",
+          "449877",
+          "449269"
+        ],
+        "haze_sanctuary_index": 37.6,
+        "effective_psi_baseline": 191.0,
+        "psi_delta_vs_max": "-15.1%",
+        "unhealthy_hours_since_1997": 1004,
+        "mean_psi_all_episodes": 191.0,
+        "sumatra_sw_regime_psi": 193.8,
+        "kalimantan_se_regime_psi": 292.8,
+        "ne_sea_breeze_psi": 158.0,
+        "refuge_spot": "Parkway Parade Commercial Tower & Marine Parade CC (Postal Code 449269)",
+        "meteorological_mechanism": "Direct southern coastal exposure; first landfall for Kalimantan & South Sumatra plumes; avoid outdoor coast during SE winds.",
+        "episodes": {
+          "1997": {
+            "effective_psi": 215.8,
+            "hsi_score": 26.2,
+            "sea_relief": 1.4,
+            "uhi_penalty": 7.4,
+            "canopy_relief": 5.0,
+            "advection_impact": 36.8
+          },
+          "2013": {
+            "effective_psi": 193.8,
+            "hsi_score": 35.4,
+            "sea_relief": 1.4,
+            "uhi_penalty": 7.4,
+            "canopy_relief": 5.0,
+            "advection_impact": 10.8
+          },
+          "2015": {
+            "effective_psi": 292.8,
+            "hsi_score": 0.0,
+            "sea_relief": 1.4,
+            "uhi_penalty": 7.4,
+            "canopy_relief": 5.0,
+            "advection_impact": 36.8
+          },
+          "2019": {
+            "effective_psi": 157.8,
+            "hsi_score": 50.5,
+            "sea_relief": 1.4,
+            "uhi_penalty": 7.4,
+            "canopy_relief": 5.0,
+            "advection_impact": 36.8
+          },
+          "2023": {
+            "effective_psi": 131.8,
+            "hsi_score": 61.5,
+            "sea_relief": 1.4,
+            "uhi_penalty": 7.4,
+            "canopy_relief": 5.0,
+            "advection_impact": 36.8
+          },
+          "2026": {
+            "effective_psi": 153.8,
+            "hsi_score": 52.2,
+            "sea_relief": 1.4,
+            "uhi_penalty": 7.4,
+            "canopy_relief": 5.0,
+            "advection_impact": 10.8
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
       "id": "serangoon_central",
       "geometry": {
         "type": "Polygon",
@@ -1641,9 +1655,10 @@
           "556084",
           "556111"
         ],
-        "haze_sanctuary_index": 39.4,
+        "haze_sanctuary_index": 36.8,
+        "effective_psi_baseline": 190.5,
         "psi_delta_vs_max": "-15.3%",
-        "unhealthy_hours_since_1997": 984,
+        "unhealthy_hours_since_1997": 1012,
         "mean_psi_all_episodes": 190.5,
         "sumatra_sw_regime_psi": 184.2,
         "kalimantan_se_regime_psi": 193.6,
@@ -1704,462 +1719,6 @@
     },
     {
       "type": "Feature",
-      "id": "orchard",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              103.849,
-              1.303
-            ],
-            [
-              103.8415,
-              1.31599
-            ],
-            [
-              103.8265,
-              1.31599
-            ],
-            [
-              103.819,
-              1.303
-            ],
-            [
-              103.8265,
-              1.29001
-            ],
-            [
-              103.8415,
-              1.29001
-            ],
-            [
-              103.849,
-              1.303
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "sanctuary_rank": 16,
-        "subzone": "Orchard",
-        "planning_area": "Orchard",
-        "region": "Central",
-        "postal_district": "D09",
-        "postal_sectors": [
-          "22",
-          "23"
-        ],
-        "sample_postal_codes": [
-          "238801",
-          "238872",
-          "237973"
-        ],
-        "haze_sanctuary_index": 27.0,
-        "psi_delta_vs_max": "+7.6%",
-        "unhealthy_hours_since_1997": 1121,
-        "mean_psi_all_episodes": 242.0,
-        "sumatra_sw_regime_psi": 260.8,
-        "kalimantan_se_regime_psi": 364.9,
-        "ne_sea_breeze_psi": 212.8,
-        "refuge_spot": "ION Orchard / Ngee Ann City Underpass HEPA Network (Postal Code 238801)",
-        "meteorological_mechanism": "Valley topography flanked by Mount Sophia and Fort Canning; suppresses vertical boundary layer mixing.",
-        "episodes": {
-          "1997": {
-            "effective_psi": 265.9,
-            "hsi_score": 5.1,
-            "sea_relief": 0.8,
-            "uhi_penalty": 14.0,
-            "canopy_relief": 3.4,
-            "advection_impact": 30.1
-          },
-          "2013": {
-            "effective_psi": 260.8,
-            "hsi_score": 7.3,
-            "sea_relief": 0.8,
-            "uhi_penalty": 14.0,
-            "canopy_relief": 3.4,
-            "advection_impact": 16.0
-          },
-          "2015": {
-            "effective_psi": 364.9,
-            "hsi_score": 0.0,
-            "sea_relief": 0.8,
-            "uhi_penalty": 14.0,
-            "canopy_relief": 3.4,
-            "advection_impact": 30.1
-          },
-          "2019": {
-            "effective_psi": 188.9,
-            "hsi_score": 37.4,
-            "sea_relief": 0.8,
-            "uhi_penalty": 14.0,
-            "canopy_relief": 3.4,
-            "advection_impact": 30.1
-          },
-          "2023": {
-            "effective_psi": 157.9,
-            "hsi_score": 50.5,
-            "sea_relief": 0.8,
-            "uhi_penalty": 14.0,
-            "canopy_relief": 3.4,
-            "advection_impact": 30.1
-          },
-          "2026": {
-            "effective_psi": 213.8,
-            "hsi_score": 27.0,
-            "sea_relief": 0.8,
-            "uhi_penalty": 14.0,
-            "canopy_relief": 3.4,
-            "advection_impact": 16.0
-          }
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "downtown_core",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              103.869,
-              1.284
-            ],
-            [
-              103.8615,
-              1.29699
-            ],
-            [
-              103.8465,
-              1.29699
-            ],
-            [
-              103.839,
-              1.284
-            ],
-            [
-              103.8465,
-              1.27101
-            ],
-            [
-              103.8615,
-              1.27101
-            ],
-            [
-              103.869,
-              1.284
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "sanctuary_rank": 17,
-        "subzone": "Downtown Core",
-        "planning_area": "Downtown Core",
-        "region": "Central",
-        "postal_district": "D01",
-        "postal_sectors": [
-          "01",
-          "02",
-          "03",
-          "04"
-        ],
-        "sample_postal_codes": [
-          "018989",
-          "048581",
-          "018956"
-        ],
-        "haze_sanctuary_index": 26.6,
-        "psi_delta_vs_max": "+10.4%",
-        "unhealthy_hours_since_1997": 1125,
-        "mean_psi_all_episodes": 248.5,
-        "sumatra_sw_regime_psi": 261.9,
-        "kalimantan_se_regime_psi": 374.0,
-        "ne_sea_breeze_psi": 215.5,
-        "refuge_spot": "Marina Bay Sands / Marina Bay Financial Centre MERV-14 Enclosed Sanctuaries (Postal Code 018956)",
-        "meteorological_mechanism": "High-density urban canyon; nocturnal thermal inversion traps particulates below 120m; direct hit from SE plumes.",
-        "episodes": {
-          "1997": {
-            "effective_psi": 275.0,
-            "hsi_score": 1.3,
-            "sea_relief": 0.5,
-            "uhi_penalty": 15.2,
-            "canopy_relief": 2.2,
-            "advection_impact": 36.4
-          },
-          "2013": {
-            "effective_psi": 261.9,
-            "hsi_score": 6.8,
-            "sea_relief": 0.5,
-            "uhi_penalty": 15.2,
-            "canopy_relief": 2.2,
-            "advection_impact": 14.4
-          },
-          "2015": {
-            "effective_psi": 374.0,
-            "hsi_score": 0.0,
-            "sea_relief": 0.5,
-            "uhi_penalty": 15.2,
-            "canopy_relief": 2.2,
-            "advection_impact": 36.4
-          },
-          "2019": {
-            "effective_psi": 198.0,
-            "hsi_score": 33.7,
-            "sea_relief": 0.5,
-            "uhi_penalty": 15.2,
-            "canopy_relief": 2.2,
-            "advection_impact": 36.4
-          },
-          "2023": {
-            "effective_psi": 167.0,
-            "hsi_score": 46.7,
-            "sea_relief": 0.5,
-            "uhi_penalty": 15.2,
-            "canopy_relief": 2.2,
-            "advection_impact": 36.4
-          },
-          "2026": {
-            "effective_psi": 214.9,
-            "hsi_score": 26.6,
-            "sea_relief": 0.5,
-            "uhi_penalty": 15.2,
-            "canopy_relief": 2.2,
-            "advection_impact": 14.4
-          }
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "tanjong_pagar",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              103.86,
-              1.276
-            ],
-            [
-              103.8525,
-              1.28899
-            ],
-            [
-              103.8375,
-              1.28899
-            ],
-            [
-              103.83,
-              1.276
-            ],
-            [
-              103.8375,
-              1.26301
-            ],
-            [
-              103.8525,
-              1.26301
-            ],
-            [
-              103.86,
-              1.276
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "sanctuary_rank": 18,
-        "subzone": "Tanjong Pagar",
-        "planning_area": "Downtown Core",
-        "region": "Central",
-        "postal_district": "D02",
-        "postal_sectors": [
-          "07",
-          "08"
-        ],
-        "sample_postal_codes": [
-          "079903",
-          "079904",
-          "088539"
-        ],
-        "haze_sanctuary_index": 26.4,
-        "psi_delta_vs_max": "+10.4%",
-        "unhealthy_hours_since_1997": 1128,
-        "mean_psi_all_episodes": 248.4,
-        "sumatra_sw_regime_psi": 262.1,
-        "kalimantan_se_regime_psi": 373.8,
-        "ne_sea_breeze_psi": 214.7,
-        "refuge_spot": "Guoco Tower District-Cooled Concourse (Postal Code 079903)",
-        "meteorological_mechanism": "Deep urban canyon; heavy heat retention; high particulate concentration 02:00-08:00 SGT.",
-        "episodes": {
-          "1997": {
-            "effective_psi": 274.8,
-            "hsi_score": 1.4,
-            "sea_relief": 0.4,
-            "uhi_penalty": 14.5,
-            "canopy_relief": 2.4,
-            "advection_impact": 37.1
-          },
-          "2013": {
-            "effective_psi": 262.1,
-            "hsi_score": 6.7,
-            "sea_relief": 0.4,
-            "uhi_penalty": 14.5,
-            "canopy_relief": 2.4,
-            "advection_impact": 15.4
-          },
-          "2015": {
-            "effective_psi": 373.8,
-            "hsi_score": 0.0,
-            "sea_relief": 0.4,
-            "uhi_penalty": 14.5,
-            "canopy_relief": 2.4,
-            "advection_impact": 37.1
-          },
-          "2019": {
-            "effective_psi": 197.8,
-            "hsi_score": 33.7,
-            "sea_relief": 0.4,
-            "uhi_penalty": 14.5,
-            "canopy_relief": 2.4,
-            "advection_impact": 37.1
-          },
-          "2023": {
-            "effective_psi": 166.8,
-            "hsi_score": 46.8,
-            "sea_relief": 0.4,
-            "uhi_penalty": 14.5,
-            "canopy_relief": 2.4,
-            "advection_impact": 37.1
-          },
-          "2026": {
-            "effective_psi": 215.1,
-            "hsi_score": 26.4,
-            "sea_relief": 0.4,
-            "uhi_penalty": 14.5,
-            "canopy_relief": 2.4,
-            "advection_impact": 15.4
-          }
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "harbourfront",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              103.835,
-              1.264
-            ],
-            [
-              103.8275,
-              1.27699
-            ],
-            [
-              103.8125,
-              1.27699
-            ],
-            [
-              103.805,
-              1.264
-            ],
-            [
-              103.8125,
-              1.25101
-            ],
-            [
-              103.8275,
-              1.25101
-            ],
-            [
-              103.835,
-              1.264
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "sanctuary_rank": 19,
-        "subzone": "HarbourFront",
-        "planning_area": "Bukit Merah",
-        "region": "South",
-        "postal_district": "D04",
-        "postal_sectors": [
-          "09"
-        ],
-        "sample_postal_codes": [
-          "098585",
-          "098588"
-        ],
-        "haze_sanctuary_index": 25.6,
-        "psi_delta_vs_max": "+10.6%",
-        "unhealthy_hours_since_1997": 1136,
-        "mean_psi_all_episodes": 248.8,
-        "sumatra_sw_regime_psi": 253.2,
-        "kalimantan_se_regime_psi": 386.1,
-        "ne_sea_breeze_psi": 214.4,
-        "refuge_spot": "VivoCity Enclosed Retail Concourse (Postal Code 098585)",
-        "meteorological_mechanism": "Immediate southern coastline overlooking Keppel Harbour; highly vulnerable to SE/S Kalimantan plumes.",
-        "episodes": {
-          "1997": {
-            "effective_psi": 269.1,
-            "hsi_score": 3.8,
-            "sea_relief": 0.3,
-            "uhi_penalty": 11.9,
-            "canopy_relief": 4.2,
-            "advection_impact": 37.7
-          },
-          "2013": {
-            "effective_psi": 253.2,
-            "hsi_score": 10.5,
-            "sea_relief": 0.3,
-            "uhi_penalty": 11.9,
-            "canopy_relief": 4.2,
-            "advection_impact": 17.8
-          },
-          "2015": {
-            "effective_psi": 386.1,
-            "hsi_score": 0.0,
-            "sea_relief": 0.3,
-            "uhi_penalty": 11.9,
-            "canopy_relief": 4.2,
-            "advection_impact": 37.7
-          },
-          "2019": {
-            "effective_psi": 199.1,
-            "hsi_score": 33.2,
-            "sea_relief": 0.3,
-            "uhi_penalty": 11.9,
-            "canopy_relief": 4.2,
-            "advection_impact": 37.7
-          },
-          "2023": {
-            "effective_psi": 168.1,
-            "hsi_score": 46.2,
-            "sea_relief": 0.3,
-            "uhi_penalty": 11.9,
-            "canopy_relief": 4.2,
-            "advection_impact": 37.7
-          },
-          "2026": {
-            "effective_psi": 217.2,
-            "hsi_score": 25.6,
-            "sea_relief": 0.3,
-            "uhi_penalty": 11.9,
-            "canopy_relief": 4.2,
-            "advection_impact": 17.8
-          }
-        }
-      }
-    },
-    {
-      "type": "Feature",
       "id": "jurong_east",
       "geometry": {
         "type": "Polygon",
@@ -2197,7 +1756,7 @@
         ]
       },
       "properties": {
-        "sanctuary_rank": 20,
+        "sanctuary_rank": 16,
         "subzone": "Jurong East",
         "planning_area": "Jurong East",
         "region": "West",
@@ -2210,9 +1769,10 @@
           "609607",
           "608532"
         ],
-        "haze_sanctuary_index": 18.6,
+        "haze_sanctuary_index": 23.5,
+        "effective_psi_baseline": 232.3,
         "psi_delta_vs_max": "+3.2%",
-        "unhealthy_hours_since_1997": 1214,
+        "unhealthy_hours_since_1997": 1160,
         "mean_psi_all_episodes": 232.3,
         "sumatra_sw_regime_psi": 276.7,
         "kalimantan_se_regime_psi": 339.6,
@@ -2310,7 +1870,7 @@
         ]
       },
       "properties": {
-        "sanctuary_rank": 21,
+        "sanctuary_rank": 17,
         "subzone": "Boon Lay",
         "planning_area": "Jurong West",
         "region": "West",
@@ -2323,9 +1883,10 @@
           "649848",
           "648310"
         ],
-        "haze_sanctuary_index": 15.6,
+        "haze_sanctuary_index": 22.3,
+        "effective_psi_baseline": 236.6,
         "psi_delta_vs_max": "+5.2%",
-        "unhealthy_hours_since_1997": 1247,
+        "unhealthy_hours_since_1997": 1173,
         "mean_psi_all_episodes": 236.6,
         "sumatra_sw_regime_psi": 283.9,
         "kalimantan_se_regime_psi": 342.5,
@@ -2386,112 +1947,115 @@
     },
     {
       "type": "Feature",
-      "id": "jurong_island",
+      "id": "orchard",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              103.72,
-              1.265
+              103.849,
+              1.303
             ],
             [
-              103.7125,
-              1.27799
+              103.8415,
+              1.31599
             ],
             [
-              103.6975,
-              1.27799
+              103.8265,
+              1.31599
             ],
             [
-              103.69,
-              1.265
+              103.819,
+              1.303
             ],
             [
-              103.6975,
-              1.25201
+              103.8265,
+              1.29001
             ],
             [
-              103.7125,
-              1.25201
+              103.8415,
+              1.29001
             ],
             [
-              103.72,
-              1.265
+              103.849,
+              1.303
             ]
           ]
         ]
       },
       "properties": {
-        "sanctuary_rank": 22,
-        "subzone": "Jurong Island",
-        "planning_area": "Western Islands",
-        "region": "West",
-        "postal_district": "D22",
+        "sanctuary_rank": 18,
+        "subzone": "Orchard",
+        "planning_area": "Orchard",
+        "region": "Central",
+        "postal_district": "D09",
         "postal_sectors": [
-          "62"
+          "22",
+          "23"
         ],
         "sample_postal_codes": [
-          "627885",
-          "627886"
+          "238801",
+          "238872",
+          "237973"
         ],
-        "haze_sanctuary_index": 12.9,
-        "psi_delta_vs_max": "+10.7%",
-        "unhealthy_hours_since_1997": 1277,
-        "mean_psi_all_episodes": 249.0,
-        "sumatra_sw_regime_psi": 290.3,
-        "kalimantan_se_regime_psi": 357.8,
-        "ne_sea_breeze_psi": 228.4,
-        "refuge_spot": "Jurong Island Checkpoint Administration Building (Postal Code 627885)",
-        "meteorological_mechanism": "Southern offshore industrial complex; hits peak PSI first during SW plumes; zero maritime vegetative buffer.",
+        "haze_sanctuary_index": 21.2,
+        "effective_psi_baseline": 242.0,
+        "psi_delta_vs_max": "+7.6%",
+        "unhealthy_hours_since_1997": 1185,
+        "mean_psi_all_episodes": 242.0,
+        "sumatra_sw_regime_psi": 260.8,
+        "kalimantan_se_regime_psi": 364.9,
+        "ne_sea_breeze_psi": 212.8,
+        "refuge_spot": "ION Orchard / Ngee Ann City Underpass HEPA Network (Postal Code 238801)",
+        "meteorological_mechanism": "Valley topography flanked by Mount Sophia and Fort Canning; suppresses vertical boundary layer mixing.",
         "episodes": {
           "1997": {
-            "effective_psi": 242.8,
-            "hsi_score": 14.8,
-            "sea_relief": 0.1,
-            "uhi_penalty": 11.5,
-            "canopy_relief": 1.0,
-            "advection_impact": 37.4
+            "effective_psi": 265.9,
+            "hsi_score": 5.1,
+            "sea_relief": 0.8,
+            "uhi_penalty": 14.0,
+            "canopy_relief": 3.4,
+            "advection_impact": 30.1
           },
           "2013": {
-            "effective_psi": 290.3,
-            "hsi_score": 0.0,
-            "sea_relief": 0.1,
-            "uhi_penalty": 11.5,
-            "canopy_relief": 1.0,
-            "advection_impact": 33.8
+            "effective_psi": 260.8,
+            "hsi_score": 7.3,
+            "sea_relief": 0.8,
+            "uhi_penalty": 14.0,
+            "canopy_relief": 3.4,
+            "advection_impact": 16.0
           },
           "2015": {
-            "effective_psi": 357.8,
+            "effective_psi": 364.9,
             "hsi_score": 0.0,
-            "sea_relief": 0.1,
-            "uhi_penalty": 11.5,
-            "canopy_relief": 1.0,
-            "advection_impact": 37.4
+            "sea_relief": 0.8,
+            "uhi_penalty": 14.0,
+            "canopy_relief": 3.4,
+            "advection_impact": 30.1
           },
           "2019": {
-            "effective_psi": 192.8,
-            "hsi_score": 35.8,
-            "sea_relief": 0.1,
-            "uhi_penalty": 11.5,
-            "canopy_relief": 1.0,
-            "advection_impact": 37.4
+            "effective_psi": 188.9,
+            "hsi_score": 37.4,
+            "sea_relief": 0.8,
+            "uhi_penalty": 14.0,
+            "canopy_relief": 3.4,
+            "advection_impact": 30.1
           },
           "2023": {
-            "effective_psi": 162.8,
-            "hsi_score": 48.4,
-            "sea_relief": 0.1,
-            "uhi_penalty": 11.5,
-            "canopy_relief": 1.0,
-            "advection_impact": 37.4
+            "effective_psi": 157.9,
+            "hsi_score": 50.5,
+            "sea_relief": 0.8,
+            "uhi_penalty": 14.0,
+            "canopy_relief": 3.4,
+            "advection_impact": 30.1
           },
           "2026": {
-            "effective_psi": 247.3,
-            "hsi_score": 12.9,
-            "sea_relief": 0.1,
-            "uhi_penalty": 11.5,
-            "canopy_relief": 1.0,
-            "advection_impact": 33.8
+            "effective_psi": 213.8,
+            "hsi_score": 27.0,
+            "sea_relief": 0.8,
+            "uhi_penalty": 14.0,
+            "canopy_relief": 3.4,
+            "advection_impact": 16.0
           }
         }
       }
@@ -2535,7 +2099,7 @@
         ]
       },
       "properties": {
-        "sanctuary_rank": 23,
+        "sanctuary_rank": 19,
         "subzone": "Pioneer",
         "planning_area": "Pioneer",
         "region": "West",
@@ -2549,9 +2113,10 @@
           "629798",
           "639798"
         ],
-        "haze_sanctuary_index": 12.8,
+        "haze_sanctuary_index": 20.5,
+        "effective_psi_baseline": 243.3,
         "psi_delta_vs_max": "+8.1%",
-        "unhealthy_hours_since_1997": 1278,
+        "unhealthy_hours_since_1997": 1193,
         "mean_psi_all_episodes": 243.3,
         "sumatra_sw_regime_psi": 290.6,
         "kalimantan_se_regime_psi": 349.1,
@@ -2612,6 +2177,351 @@
     },
     {
       "type": "Feature",
+      "id": "harbourfront",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.835,
+              1.264
+            ],
+            [
+              103.8275,
+              1.27699
+            ],
+            [
+              103.8125,
+              1.27699
+            ],
+            [
+              103.805,
+              1.264
+            ],
+            [
+              103.8125,
+              1.25101
+            ],
+            [
+              103.8275,
+              1.25101
+            ],
+            [
+              103.835,
+              1.264
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sanctuary_rank": 20,
+        "subzone": "HarbourFront",
+        "planning_area": "Bukit Merah",
+        "region": "South",
+        "postal_district": "D04",
+        "postal_sectors": [
+          "09"
+        ],
+        "sample_postal_codes": [
+          "098585",
+          "098588"
+        ],
+        "haze_sanctuary_index": 19.9,
+        "effective_psi_baseline": 248.8,
+        "psi_delta_vs_max": "+10.6%",
+        "unhealthy_hours_since_1997": 1200,
+        "mean_psi_all_episodes": 248.8,
+        "sumatra_sw_regime_psi": 253.2,
+        "kalimantan_se_regime_psi": 386.1,
+        "ne_sea_breeze_psi": 214.4,
+        "refuge_spot": "VivoCity Enclosed Retail Concourse (Postal Code 098585)",
+        "meteorological_mechanism": "Immediate southern coastline overlooking Keppel Harbour; highly vulnerable to SE/S Kalimantan plumes.",
+        "episodes": {
+          "1997": {
+            "effective_psi": 269.1,
+            "hsi_score": 3.8,
+            "sea_relief": 0.3,
+            "uhi_penalty": 11.9,
+            "canopy_relief": 4.2,
+            "advection_impact": 37.7
+          },
+          "2013": {
+            "effective_psi": 253.2,
+            "hsi_score": 10.5,
+            "sea_relief": 0.3,
+            "uhi_penalty": 11.9,
+            "canopy_relief": 4.2,
+            "advection_impact": 17.8
+          },
+          "2015": {
+            "effective_psi": 386.1,
+            "hsi_score": 0.0,
+            "sea_relief": 0.3,
+            "uhi_penalty": 11.9,
+            "canopy_relief": 4.2,
+            "advection_impact": 37.7
+          },
+          "2019": {
+            "effective_psi": 199.1,
+            "hsi_score": 33.2,
+            "sea_relief": 0.3,
+            "uhi_penalty": 11.9,
+            "canopy_relief": 4.2,
+            "advection_impact": 37.7
+          },
+          "2023": {
+            "effective_psi": 168.1,
+            "hsi_score": 46.2,
+            "sea_relief": 0.3,
+            "uhi_penalty": 11.9,
+            "canopy_relief": 4.2,
+            "advection_impact": 37.7
+          },
+          "2026": {
+            "effective_psi": 217.2,
+            "hsi_score": 25.6,
+            "sea_relief": 0.3,
+            "uhi_penalty": 11.9,
+            "canopy_relief": 4.2,
+            "advection_impact": 17.8
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "downtown_core",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.869,
+              1.284
+            ],
+            [
+              103.8615,
+              1.29699
+            ],
+            [
+              103.8465,
+              1.29699
+            ],
+            [
+              103.839,
+              1.284
+            ],
+            [
+              103.8465,
+              1.27101
+            ],
+            [
+              103.8615,
+              1.27101
+            ],
+            [
+              103.869,
+              1.284
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sanctuary_rank": 21,
+        "subzone": "Downtown Core",
+        "planning_area": "Downtown Core",
+        "region": "Central",
+        "postal_district": "D01",
+        "postal_sectors": [
+          "01",
+          "02",
+          "03",
+          "04"
+        ],
+        "sample_postal_codes": [
+          "018989",
+          "048581",
+          "018956"
+        ],
+        "haze_sanctuary_index": 19.2,
+        "effective_psi_baseline": 248.5,
+        "psi_delta_vs_max": "+10.4%",
+        "unhealthy_hours_since_1997": 1207,
+        "mean_psi_all_episodes": 248.5,
+        "sumatra_sw_regime_psi": 261.9,
+        "kalimantan_se_regime_psi": 374.0,
+        "ne_sea_breeze_psi": 215.5,
+        "refuge_spot": "Marina Bay Sands / Marina Bay Financial Centre MERV-14 Enclosed Sanctuaries (Postal Code 018956)",
+        "meteorological_mechanism": "High-density urban canyon; nocturnal thermal inversion traps particulates below 120m; direct hit from SE plumes.",
+        "episodes": {
+          "1997": {
+            "effective_psi": 275.0,
+            "hsi_score": 1.3,
+            "sea_relief": 0.5,
+            "uhi_penalty": 15.2,
+            "canopy_relief": 2.2,
+            "advection_impact": 36.4
+          },
+          "2013": {
+            "effective_psi": 261.9,
+            "hsi_score": 6.8,
+            "sea_relief": 0.5,
+            "uhi_penalty": 15.2,
+            "canopy_relief": 2.2,
+            "advection_impact": 14.4
+          },
+          "2015": {
+            "effective_psi": 374.0,
+            "hsi_score": 0.0,
+            "sea_relief": 0.5,
+            "uhi_penalty": 15.2,
+            "canopy_relief": 2.2,
+            "advection_impact": 36.4
+          },
+          "2019": {
+            "effective_psi": 198.0,
+            "hsi_score": 33.7,
+            "sea_relief": 0.5,
+            "uhi_penalty": 15.2,
+            "canopy_relief": 2.2,
+            "advection_impact": 36.4
+          },
+          "2023": {
+            "effective_psi": 167.0,
+            "hsi_score": 46.7,
+            "sea_relief": 0.5,
+            "uhi_penalty": 15.2,
+            "canopy_relief": 2.2,
+            "advection_impact": 36.4
+          },
+          "2026": {
+            "effective_psi": 214.9,
+            "hsi_score": 26.6,
+            "sea_relief": 0.5,
+            "uhi_penalty": 15.2,
+            "canopy_relief": 2.2,
+            "advection_impact": 14.4
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tanjong_pagar",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.86,
+              1.276
+            ],
+            [
+              103.8525,
+              1.28899
+            ],
+            [
+              103.8375,
+              1.28899
+            ],
+            [
+              103.83,
+              1.276
+            ],
+            [
+              103.8375,
+              1.26301
+            ],
+            [
+              103.8525,
+              1.26301
+            ],
+            [
+              103.86,
+              1.276
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sanctuary_rank": 22,
+        "subzone": "Tanjong Pagar",
+        "planning_area": "Downtown Core",
+        "region": "Central",
+        "postal_district": "D02",
+        "postal_sectors": [
+          "07",
+          "08"
+        ],
+        "sample_postal_codes": [
+          "079903",
+          "079904",
+          "088539"
+        ],
+        "haze_sanctuary_index": 19.2,
+        "effective_psi_baseline": 248.4,
+        "psi_delta_vs_max": "+10.4%",
+        "unhealthy_hours_since_1997": 1207,
+        "mean_psi_all_episodes": 248.4,
+        "sumatra_sw_regime_psi": 262.1,
+        "kalimantan_se_regime_psi": 373.8,
+        "ne_sea_breeze_psi": 214.7,
+        "refuge_spot": "Guoco Tower District-Cooled Concourse (Postal Code 079903)",
+        "meteorological_mechanism": "Deep urban canyon; heavy heat retention; high particulate concentration 02:00-08:00 SGT.",
+        "episodes": {
+          "1997": {
+            "effective_psi": 274.8,
+            "hsi_score": 1.4,
+            "sea_relief": 0.4,
+            "uhi_penalty": 14.5,
+            "canopy_relief": 2.4,
+            "advection_impact": 37.1
+          },
+          "2013": {
+            "effective_psi": 262.1,
+            "hsi_score": 6.7,
+            "sea_relief": 0.4,
+            "uhi_penalty": 14.5,
+            "canopy_relief": 2.4,
+            "advection_impact": 15.4
+          },
+          "2015": {
+            "effective_psi": 373.8,
+            "hsi_score": 0.0,
+            "sea_relief": 0.4,
+            "uhi_penalty": 14.5,
+            "canopy_relief": 2.4,
+            "advection_impact": 37.1
+          },
+          "2019": {
+            "effective_psi": 197.8,
+            "hsi_score": 33.7,
+            "sea_relief": 0.4,
+            "uhi_penalty": 14.5,
+            "canopy_relief": 2.4,
+            "advection_impact": 37.1
+          },
+          "2023": {
+            "effective_psi": 166.8,
+            "hsi_score": 46.8,
+            "sea_relief": 0.4,
+            "uhi_penalty": 14.5,
+            "canopy_relief": 2.4,
+            "advection_impact": 37.1
+          },
+          "2026": {
+            "effective_psi": 215.1,
+            "hsi_score": 26.4,
+            "sea_relief": 0.4,
+            "uhi_penalty": 14.5,
+            "canopy_relief": 2.4,
+            "advection_impact": 15.4
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
       "id": "tuas_view",
       "geometry": {
         "type": "Polygon",
@@ -2649,7 +2559,7 @@
         ]
       },
       "properties": {
-        "sanctuary_rank": 24,
+        "sanctuary_rank": 23,
         "subzone": "Tuas View",
         "planning_area": "Tuas",
         "region": "West",
@@ -2662,9 +2572,10 @@
           "637559",
           "637607"
         ],
-        "haze_sanctuary_index": 9.8,
+        "haze_sanctuary_index": 18.8,
+        "effective_psi_baseline": 249.4,
         "psi_delta_vs_max": "+10.8%",
-        "unhealthy_hours_since_1997": 1311,
+        "unhealthy_hours_since_1997": 1212,
         "mean_psi_all_episodes": 249.4,
         "sumatra_sw_regime_psi": 297.7,
         "kalimantan_se_regime_psi": 354.8,
@@ -2719,6 +2630,119 @@
             "uhi_penalty": 9.9,
             "canopy_relief": 1.4,
             "advection_impact": 43.4
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jurong_island",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.72,
+              1.265
+            ],
+            [
+              103.7125,
+              1.27799
+            ],
+            [
+              103.6975,
+              1.27799
+            ],
+            [
+              103.69,
+              1.265
+            ],
+            [
+              103.6975,
+              1.25201
+            ],
+            [
+              103.7125,
+              1.25201
+            ],
+            [
+              103.72,
+              1.265
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sanctuary_rank": 24,
+        "subzone": "Jurong Island",
+        "planning_area": "Western Islands",
+        "region": "West",
+        "postal_district": "D22",
+        "postal_sectors": [
+          "62"
+        ],
+        "sample_postal_codes": [
+          "627885",
+          "627886"
+        ],
+        "haze_sanctuary_index": 18.7,
+        "effective_psi_baseline": 249.0,
+        "psi_delta_vs_max": "+10.7%",
+        "unhealthy_hours_since_1997": 1213,
+        "mean_psi_all_episodes": 249.0,
+        "sumatra_sw_regime_psi": 290.3,
+        "kalimantan_se_regime_psi": 357.8,
+        "ne_sea_breeze_psi": 228.4,
+        "refuge_spot": "Jurong Island Checkpoint Administration Building (Postal Code 627885)",
+        "meteorological_mechanism": "Southern offshore industrial complex; hits peak PSI first during SW plumes; zero maritime vegetative buffer.",
+        "episodes": {
+          "1997": {
+            "effective_psi": 242.8,
+            "hsi_score": 14.8,
+            "sea_relief": 0.1,
+            "uhi_penalty": 11.5,
+            "canopy_relief": 1.0,
+            "advection_impact": 37.4
+          },
+          "2013": {
+            "effective_psi": 290.3,
+            "hsi_score": 0.0,
+            "sea_relief": 0.1,
+            "uhi_penalty": 11.5,
+            "canopy_relief": 1.0,
+            "advection_impact": 33.8
+          },
+          "2015": {
+            "effective_psi": 357.8,
+            "hsi_score": 0.0,
+            "sea_relief": 0.1,
+            "uhi_penalty": 11.5,
+            "canopy_relief": 1.0,
+            "advection_impact": 37.4
+          },
+          "2019": {
+            "effective_psi": 192.8,
+            "hsi_score": 35.8,
+            "sea_relief": 0.1,
+            "uhi_penalty": 11.5,
+            "canopy_relief": 1.0,
+            "advection_impact": 37.4
+          },
+          "2023": {
+            "effective_psi": 162.8,
+            "hsi_score": 48.4,
+            "sea_relief": 0.1,
+            "uhi_penalty": 11.5,
+            "canopy_relief": 1.0,
+            "advection_impact": 37.4
+          },
+          "2026": {
+            "effective_psi": 247.3,
+            "hsi_score": 12.9,
+            "sea_relief": 0.1,
+            "uhi_penalty": 11.5,
+            "canopy_relief": 1.0,
+            "advection_impact": 33.8
           }
         }
       }
